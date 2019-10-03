@@ -98,7 +98,7 @@ It is time now to get python and setup your work environment
     ```
 2. Now activate your environment
     ```console
-    $ source activate capstone-env
+    $ conda activate capstone-env
     ```
 
 3. You will often use jupyter notbook, therefore you should create a kernel attached to this environment
