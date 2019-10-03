@@ -176,7 +176,7 @@ With github, each of you can work on a seperate branch without damaging the code
 
 4. you need to set up the upstream before pushing anything on the cloud
     ```console
-    git push --set-upstream origin AddingTreeBasedModels
+    $ git push --set-upstream origin AddingTreeBasedModels
    ```   
   
 5. Create your new file or modify some file. Here consider we added `src/mypackage/treemodel.py`
