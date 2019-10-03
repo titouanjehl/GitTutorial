@@ -19,7 +19,7 @@ $ brew install git
 ```
 
 ### Windows
-Get [ubuntu] (https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows#2)
+Get [ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-ubuntu-on-windows#2)
 
 ### Ubuntu
 1. Update apt-get
