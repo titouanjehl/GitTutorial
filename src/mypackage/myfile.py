@@ -10,3 +10,6 @@ def factorial(n):
         return 1
     else:
         return n*factorial(n-1)
+
+def addition(x, y):
+    return x+y
