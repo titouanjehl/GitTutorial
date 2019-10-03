@@ -100,6 +100,11 @@ It is time now to get python and setup your work environment
     ```console
     $ conda activate capstone-env
     ```
+   
+   you can deactivate the environment by calling
+   ```console
+   $ conda deactivate
+   ```
 
 3. You will often use jupyter notbook, therefore you should create a kernel attached to this environment
     ```console
