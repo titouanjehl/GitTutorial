@@ -117,3 +117,87 @@ It is time now to get python and setup your work environment
 Instead of re-coding the same functions (or copy paste) in every new notebook,
 We encourage you to have a package for your capstone. You can test this package and 
 then call it from your jupyter notebook. In this repo there is an exemple of a small package.
+
+In python the best practice is to structure your project as follows:
+* src/
+    * myPackage/
+        * __init__.py
+        * myFile1.py
+        * myFile2.py
+        * SubPackage
+            * __init__.py
+            * yetAnotherFile.py
+* tests/
+    * test_myFile1.py
+    * test_myFile2.py
+    * test_yetAnotherFile.py
+    
+In your virtual environment, you can install the project and test it by running 
+```console
+$ python setup.py install
+$ pytest
+```
+
+You can play with the test to see what happens when the test fails.
+
+## Working in a group on github
+With github, each of you can work on a seperate branch without damaging the code of others.
+
+1. Create your capstone repo and try pushing this repository on your capstone repo
+    Go to create new repository, copy the link to this repo
+    then set the origin to this address:
+    ```console
+    $ git remote set-url origin YOUR_LINK
+    $ git remote -v
+     origin	YOUR_LINK (fetch)
+     origin	YOUR_LINK (push)
+    ```
+
+
+2. By running `git branch` you will see on what branch you are
+    ```console
+    $ git branch
+    * master
+    ```
+
+3. If you want to modify the code first create your own branch with a name desciptive enough
+    for you and other to understand what it is
+    ```console
+    $ git branch AddingTreeBasedModels
+    ```
+   
+3. Before modifying the code you need to go on that new branch
+    ```console
+    $ git checkout AddingTreeBasedModels
+    $ git branch
+      master
+    * AddingTreeBasedModels
+    ```
+
+4. you need to set up the upstream before pushing anything on the cloud
+    ```console
+    git push --set-upstream origin AddingTreeBasedModels
+   ```   
+  
+5. Create your new file or modify some file. Here consider we added `src/mypackage/treemodel.py`
+    once you are done, add it to the repository, commit it with a short message then push
+    ```console
+    $ git add src/mypackage/treemodel.py
+    $ git commit -m"added a tree model"
+    $ git push
+    ```
+   
+6. now every one who checks out `AddingTreeBasedModels` will be able to see your work.
+    However if you checkout `master` you won't see your change
+    ```console
+    $ git checkout master
+    ```
+   Check your folder, your work isn't here anymore.
+   
+7. You can now try to merge your work on `master`. To do that go to github.com, locate your repo and your
+    new branch. Create a pull request onto master and ask your teamates to review your code
+    Once the code has been approved you can merge.
+    
+Doing so you should never run in conflicts. Keep your updates short so that reviewing is easy
+      
+
