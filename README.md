@@ -46,6 +46,14 @@ $ git config --global user.name "YOUR NAME"
 $ git config --global user.email "YOUREMAIL@berkeley.edu"
 ```
 
+You can now clone this repository
+```console
+$ mkdir ~/github.com
+$ cd ~/github.com
+$ git clone https://github.com/titouanjehl/GitTutorial.git
+$ cd  GitTutorial
+```
+
 ## Python and Anaconda
 It is time now to get python and setup your work environment
 
@@ -101,3 +109,6 @@ $ python -m ipykernel install --user --name capstone-env --display-name "Python 
 ```
 
 4. Now is the time to install all the usefull libraries
+```console
+$ pip install -r requirements.txt
+```
