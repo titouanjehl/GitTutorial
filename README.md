@@ -45,3 +45,59 @@ Set up your config
 $ git config --global user.name "YOUR NAME"
 $ git config --global user.email "YOUREMAIL@berkeley.edu"
 ```
+
+## Python and Anaconda
+It is time now to get python and setup your work environment
+
+### On Mac
+1. Get Anaconda with homebrew
+```console
+$ brew cask install anaconda
+```
+
+2. Export the path so your computer knows where this is
+```console
+$ export PATH="/usr/local/anaconda3/bin:$PATH"
+```
+
+3. restart your terminal (or run `source ~/.zshrc`) then try
+```console
+$ jupyter notebook
+```
+
+### On Ubuntu
+1. Get anaconda and install it
+```console
+$ wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
+$ bash Anaconda2-4.2.0-Linux-x86_64.sh -b -p ~/anaconda
+$ rm Anaconda2-4.2.0-Linux-x86_64.sh
+```
+
+2. Export the path
+```console
+$ echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc
+```
+
+3. restart your terminal (or run `source ~/.bashrc`) then try
+```console
+$ jupyter notebook
+```
+
+## Time to setup a virtual environment to work on your project
+1. From your terminal, you can now create a virtual environment. That will allow you to have only the library you need for your project in this environment and avoid many issues with un compatible libraries.
+```console
+$ conda create -n capstone-env python=3.6
+```
+2. Now activate your environment
+```console
+$ source activate capstone-env
+```
+
+3. You will often use jupyter notbook, therefore you should create a kernel attached to this environment
+```console
+$ conda install pip
+$ pip install ipykernel
+$ python -m ipykernel install --user --name capstone-env --display-name "Python (capston-env)"
+```
+
+4. Now is the time to install all the usefull libraries
