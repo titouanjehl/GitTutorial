@@ -33,6 +33,7 @@ $ sudo apt-get upgrade
 $ apt-get install git-core
 ```
 
+### ALL users
 You should now have git, verify by executing
 ```console
 $ git --version
