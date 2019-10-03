@@ -196,7 +196,11 @@ With github, each of you can work on a seperate branch without damaging the code
    
 7. You can now try to merge your work on `master`. To do that go to github.com, locate your repo and your
     new branch. Create a pull request onto master and ask your teamates to review your code
-    Once the code has been approved you can merge.
+    Once the code has been approved you can merge. Finally pull the work from the cloud
+    ```console
+    $ git pull
+   ```
+   You should now see your work from master
     
 Doing so you should never run in conflicts. Keep your updates short so that reviewing is easy
       
