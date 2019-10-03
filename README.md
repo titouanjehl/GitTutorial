@@ -126,16 +126,16 @@ then call it from your jupyter notebook. In this repo there is an exemple of a s
 In python the best practice is to structure your project as follows:
 * src/
     * myPackage/
-        * __init__.py
-        * myFile1.py
-        * myFile2.py
+        * `__init__.py`
+        * `myFile1.py`
+        * `myFile2.py`
         * SubPackage
-            * __init__.py
-            * yetAnotherFile.py
+            * `__init__.py`
+            * `yetAnotherFile.py`
 * tests/
-    * test_myFile1.py
-    * test_myFile2.py
-    * test_yetAnotherFile.py
+    * `test_myFile1.py`
+    * `test_myFile2.py`
+    * `test_yetAnotherFile.py`
     
 In your virtual environment, you can install the project and test it by running 
 ```console
